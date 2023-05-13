@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sa-margin: 25px;
+  --sa-bg: rgba(10, 219, 10, 0.479);
+  --sa-bg-light: rgba(10, 219, 10, 0.3);
+  --sa-border-size: 6px;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  background: #efefef;
+}
+
+.search_icon {
+  height: 200px;
+  width: 200px;
+  background: var(--sa-bg);
+  border-radius: 50%;
+  margin-bottom: var(--sa-margin);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.search_icon::after {
+  content: "\1F914";
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"] {
+  padding: 15px 10px;
+  margin-bottom: var(--sa-margin);
+  background: #fff;
+  border: 1px solid #b1afaf;
+  outline: none;
+  border-radius: var(--sa-border-size);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+form input[type="text"]:focus {
+  border-color: var(--sa-bg);
+}
+
+form button[type="submit"] {
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: var(--sa-bg);
+  border-radius: var(--sa-border-size);
+  color: coral;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background: var(--sa-bg-light);
+  color: coral;
+}
