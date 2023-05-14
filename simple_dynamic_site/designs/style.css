@@ -19,6 +19,7 @@ body {
   background: #efefef;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .message {
@@ -29,13 +30,17 @@ body {
   text-align: center;
 }
 
-.search_icon {
+.search_icon,
+.avatar {
   height: 200px;
   width: 200px;
   background: var(--sa-secondary-color);
   border-radius: 50%;
-  margin-bottom: var(--sa-margin);
+}
+
+.search_icon {
   color: #fff;
+  margin-bottom: var(--sa-margin);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,4 +92,46 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
   background: var(--sa-secondary-color-light);
   color: var(--sa-primary-color);
+}
+
+.container {
+  max-height: 700px;
+  background-color: #fff;
+  align-self: center;
+  justify-self: center;
+  margin-top: 80px;
+  border-radius: var(--sa-border-size);
+  box-shadow: 4px 4px 4px 4px #fff, -4px -4px 4px 4px #fff;
+}
+
+.container .avatar {
+  margin: 50px 70px 16px;
+}
+
+.container p.username {
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.container ul.info {
+  list-style: none;
+  text-align: center;
+}
+
+.container ul.info li {
+  border-top: 1px solid #efefef;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #5f5d5d;
+}
+
+.container ul.info li span {
+  font-weight: 600;
+  color: #000;
+}
+
+.container ul.info li a {
+  text-decoration: none;
+  color: #00ff00;
+  font-weight: 500;
 }
