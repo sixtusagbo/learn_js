@@ -6,23 +6,33 @@
 
 :root {
   --sa-margin: 25px;
-  --sa-bg: rgba(10, 219, 10, 0.479);
-  --sa-bg-light: rgba(10, 219, 10, 0.3);
+  --sa-secondary-color: rgba(10, 219, 10, 0.479);
+  --sa-secondary-color-light: rgba(10, 219, 10, 0.3);
   --sa-border-size: 6px;
+  --sa-primary-color: #FCD82F;
 }
 
 body {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
   background: #efefef;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.message {
+  margin-bottom: 80px;
+  background: var(--sa-primary-color);
+  padding: 20px 60px;
+  font-size: 1.15rem;
+  text-align: center;
 }
 
 .search_icon {
   height: 200px;
   width: 200px;
-  background: var(--sa-bg);
+  background: var(--sa-secondary-color);
   border-radius: 50%;
   margin-bottom: var(--sa-margin);
   color: #fff;
@@ -41,13 +51,15 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: center;
+  justify-self: center;
 }
 
 form input[type="text"] {
   padding: 15px 10px;
   margin-bottom: var(--sa-margin);
   background: #fff;
-  border: 1px solid #b1afaf;
+  border: 1px solid var(--sa-secondary-color);
   outline: none;
   border-radius: var(--sa-border-size);
   font-size: 1.3rem;
@@ -55,7 +67,7 @@ form input[type="text"] {
 }
 
 form input[type="text"]:focus {
-  border-color: var(--sa-bg);
+  border-color: var(--sa-secondary-color-light);
 }
 
 form button[type="submit"] {
@@ -64,15 +76,15 @@ form button[type="submit"] {
   height: 50px;
   border: none;
   outline: none;
-  background: var(--sa-bg);
+  background: var(--sa-secondary-color);
   border-radius: var(--sa-border-size);
-  color: coral;
+  color: var(--sa-primary-color);
   font-weight: bold;
   font-size: 1.3rem;
   cursor: pointer;
 }
 
 form button[type="submit"]:hover {
-  background: var(--sa-bg-light);
-  color: coral;
+  background: var(--sa-secondary-color-light);
+  color: var(--sa-primary-color);
 }
