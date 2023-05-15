@@ -1,4 +1,12 @@
 // Create a web server
+let http = require("http");
+http.createServer(function (request, response) {
+  response.writeHead(200, { "Content-Type": "text/plain" });
+  response.write("Before end\n");
+  setInterval(() => response.write(new Date + "\n"), 1000);
+  // response.end("Hello World\n");
+}).listen(1337, "127.0.0.1");
+console.log("Server running at http://127.0.0.1:1337/");
 
 // Handle HTTP route GET / and POST /
   // if url == "/" && GET

@@ -24,7 +24,7 @@ function printMessage(username, badgeCount, points) {
 function get(username) {
   try {
     // Connect to the API URL (https://teamtreehouse.com/username.json)
-    const request = https.get(`https://teamtreehouse.com/${username}.json`, response => {
+    const request = https.get(`https://teamtreehouse.com/profiles/${username}.json`, response => {
       if (response.statusCode === 200) {
 
         let body = "";
@@ -44,10 +44,12 @@ function get(username) {
 
       } else {
         const message = `There was an error getting the profile for ${username} (${http.STATUS_CODES[response.statusCode]})`
+        console.log(`Status code: ${response.statusCode}`);
         const statusCodeError = new Error(message);
         printError(statusCodeError);
       }
     });
+
 
     // request.on("error", error => console.error(`Problem with request: ${error.message}`));
     request.on("error", printError);
@@ -56,4 +58,4 @@ function get(username) {
   }
 }
 
-module.exports.get = get;
+module.exports = get;
