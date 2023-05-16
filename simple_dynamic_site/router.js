@@ -1,12 +1,16 @@
+const { error } = require("console");
+let renderer = require("./renderer");
+
 // Handle HTTP route GET / and POST /
 function home(request, response) {
   // if url == "/" && GET
   if (request.url === "/") {
     // show search
     response.writeHead(200, { "Content-Type": "text/plain" });
-    response.write("Header\n");
-    response.write("Search\n");
-    response.end("Footer\n");
+    renderer.view("header", {}, response);
+    renderer.view("search", {}, response);
+    renderer.view("footer", {}, response);
+    response.end();
   }
   // if url == "/" && POST
   // redirect to /:username
@@ -18,7 +22,7 @@ async function user(request, response) {
   let username = request.url.replace("/", "");
   if (username.length > 0) {
     response.writeHead(200, { "Content-Type": "text/plain" });
-    response.write("Header\n");
+    renderer.view("header", {}, response);
 
     await fetch(`https://api.github.com/users/${username}`)
       .then(async data => {
@@ -35,19 +39,21 @@ async function user(request, response) {
           }
 
           // show profile
-          response.write(values.username + " has " + values.repos + " repositories.\n");
-          response.end("Footer\n");
+          renderer.view("profile", values, response);
         } else {
           // show error
-          response.write(data.status + " " + data.statusText + "\n");
-          response.end("Footer\n");
+          renderer.view("error", { errorMessage: data.status + " " + data.statusText }, response);
+          renderer.view("search", {}, response);
         }
       })
       .catch(error => {
         // show error
-        response.write(error.message + "\n");
-        response.end("Footer\n");
+        renderer.view("error", { errorMessage: error.message }, response);
+        renderer.view("search", {}, response);
       });
+
+    renderer.view("footer", {}, response);
+    response.end();
   }
 }
 
