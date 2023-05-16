@@ -1,20 +1,32 @@
 let renderer = require("./renderer");
+let querystring = require("querystring");
 
 let commonHeaders = { "Content-Type": "text/html" };
 
 // Handle HTTP route GET / and POST /
 function home(request, response) {
   // if url == "/" && GET
-  if (request.url === "/") {
+  if (request.url === "/" && request.method === "GET") {
     // show search
     response.writeHead(200, commonHeaders);
     renderer.view("header", {}, response);
     renderer.view("search", {}, response);
     renderer.view("footer", {}, response);
     response.end();
+  } else {
+    // url == "/" && POST
+
+    // get the post data
+    request.on("data", function (body) {
+      // extract username
+      let query = querystring.parse(body.toString());
+
+      // redirect to /:username
+      response.write(query.username);
+      response.end();
+    });
+
   }
-  // if url == "/" && POST
-  // redirect to /:username
 }
 
 // Handle HTTP route GET /:username and POST /
