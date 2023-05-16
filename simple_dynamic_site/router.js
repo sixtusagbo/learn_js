@@ -21,8 +21,8 @@ function home(request, response) {
       // extract username
       let query = querystring.parse(body.toString());
 
-      // redirect to /:username
-      response.write(query.username);
+      // redirect to /:username w/ 303: see other
+      response.writeHead(303, { "Location": "/" + query.username });
       response.end();
     });
 
