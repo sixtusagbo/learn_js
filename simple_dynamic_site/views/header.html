@@ -7,7 +7,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile App</title>
 
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --sa-margin: 25px;
+      --sa-secondary-color: rgba(10, 219, 10, 0.479);
+      --sa-secondary-color-light: rgba(10, 219, 10, 0.3);
+      --sa-border-size: 6px;
+      --sa-primary-color: #FCD82F;
+    }
+
+    body {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      background: #efefef;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .message {
+      background: var(--sa-primary-color);
+      padding: 20px 60px;
+      font-size: 1.15rem;
+      text-align: center;
+    }
+
+    .search_icon,
+    .avatar {
+      height: 200px;
+      width: 200px;
+      background: var(--sa-secondary-color);
+      border-radius: 50%;
+    }
+
+    .search_icon {
+      color: #fff;
+      margin-bottom: var(--sa-margin);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+    }
+
+    .search_icon::after {
+      content: "\1F914";
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      justify-self: center;
+    }
+
+    form input[type="text"] {
+      padding: 15px 10px;
+      margin-bottom: var(--sa-margin);
+      background: #fff;
+      border: 1px solid var(--sa-secondary-color);
+      outline: none;
+      border-radius: var(--sa-border-size);
+      font-size: 1.3rem;
+      text-align: center;
+    }
+
+    form input[type="text"]:focus {
+      border-color: var(--sa-secondary-color-light);
+    }
+
+    form button[type="submit"] {
+      padding: 10px;
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      background: var(--sa-secondary-color);
+      border-radius: var(--sa-border-size);
+      color: var(--sa-primary-color);
+      font-weight: bold;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    form button[type="submit"]:hover {
+      background: var(--sa-secondary-color-light);
+      color: var(--sa-primary-color);
+    }
+
+    .container {
+      max-height: 700px;
+      background-color: #fff;
+      align-self: center;
+      justify-self: center;
+      margin-top: 80px;
+      border-radius: var(--sa-border-size);
+      box-shadow: 4px 4px 4px 4px #fff, -4px -4px 4px 4px #fff;
+    }
+
+    .container .avatar {
+      margin: 50px 70px 16px;
+    }
+
+    .container p.username {
+      text-align: center;
+      margin-bottom: 1.1rem;
+    }
+
+    .container ul.info {
+      list-style: none;
+      text-align: center;
+    }
+
+    .container ul.info li {
+      border-top: 1px solid #efefef;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: #5f5d5d;
+    }
+
+    .container ul.info li span {
+      font-weight: 600;
+      color: #000;
+    }
+
+    .container ul.info li a {
+      text-decoration: none;
+      color: #00ff00;
+      font-weight: 500;
+    }
+  </style>
 </head>
 
 <body>
