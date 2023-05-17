@@ -1,5 +1,5 @@
 # Counter
-I used this app to earn about closures in JavaScript.
+I used this app to learn about closures in JavaScript.
 
 ## Closures syntax
 ```js

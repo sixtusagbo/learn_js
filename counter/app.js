@@ -1,16 +1,7 @@
-function makeBirdCounter() {
-  let count = 0;
-  function counter() {
-    count += 1;
-    return count + " birds";
-  }
-  return counter;
-}
-
-function makeDogCounter() {
+function makeCounter(noun) {
   let count = 0;
   return function counter() {
     count += 1;
-    return count + " dogs";
+    return `${count} ${noun}`;
   }
 }
