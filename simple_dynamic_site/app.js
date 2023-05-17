@@ -1,9 +1,13 @@
 let router = require("./router");
+let http = require("http");
+
+host = "127.0.0.1";
+port = 1337;
 
 // Create a web server
-let http = require("http");
 http.createServer(function (request, response) {
   router.home(request, response);
   router.user(request, response);
-}).listen(1337, "127.0.0.1");
-console.log("Server running at http://127.0.0.1:1337/");
+}).listen(port, host);
+
+console.log(`Server running at http://${host}:${port}/`);
