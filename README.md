@@ -1,8 +1,8 @@
-# Learn NodeJS
-learn node.js
+# Learn JavaScript
+It's all about JS!
 
 ## Getting Started
-Launch my app with the command `node app.js <username>`
+Launch the base profile app with the command `node app.js <username>`
 
 ## Future improvements
-- Use [GitHub](https://github.com) API instead
+- Use [GitHub](https://github.com) API for the base profile app.
