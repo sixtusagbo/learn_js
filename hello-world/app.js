@@ -18,7 +18,7 @@ console.log({}); // Object
 console.log([]); // Array
 */
 
-// Variables
+// * Variables
 // Variables are containers for storing values
 // Declaring variables
 // var, let, const
@@ -46,12 +46,12 @@ const ageConst = 30;
 console.log("const:", myNameConst);
 console.log("const:", ageConst);
 
-// Differences between var, let and const
+// ? Differences between var, let and const
 // var is function scoped, let and const are block scoped
 // var can be redeclared, let and const cannot be redeclared
 // var is hoisted, let and const are not hoisted
 
-// Illustrating null and undefined
+// ? Illustrating null and undefined
 // Difference between null and undefined
 // Null is an assignment value. It can be assigned to a variable as a representation of no value.
 // Undefined means a variable has been declared but has not yet been assigned a value.
@@ -62,7 +62,7 @@ let myVariable2 = null;
 console.log(myVariable); // undefined
 console.log(myVariable2); // null
 
-// Control flow or Control structures
+// * Control flow or Control structures
 // There are three common types of control flow:
 // 1. Conditional statements
 // 2. Loops
