@@ -126,9 +126,24 @@ let accountBalance = 999; // 999 Kuwaiti Dinar
 console.log("[accountBalance]:", accountBalance);
 
 // accountBalance = accountBalance + 1; // 6
-accountBalance++; // 6
+accountBalance++; // 1000
+accountBalance++; // 1001
+accountBalance++; // 1002
+accountBalance++; // 1003
+accountBalance++; // 1004
+accountBalance++; // 1005
+accountBalance++; // 1006
+accountBalance++; // 1007
+accountBalance++; // 1008
+accountBalance++; // 1009
+accountBalance++; // 1010
 
 console.log("[accountBalance]:", accountBalance);
+
+//! NEXT TIME
+// Pre-increment and Post-increment
+// We've seen the increment operator in action
+// The increment operator can be used in two ways: 
 
 
 // * Control flow or Control structures
