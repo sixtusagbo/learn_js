@@ -116,11 +116,19 @@ console.log("Division:", result);
 const remainder = a % b; // 0
 console.log("Modulus:", remainder);
 
+console.clear();
+
 // ! Naming conventions - Will learn
 
 // Increment (++)
 // Increment operator increases the value of a variable by 1
-let numberOfApples = 5;
+let accountBalance = 999; // 999 Kuwaiti Dinar
+console.log("[accountBalance]:", accountBalance);
+
+// accountBalance = accountBalance + 1; // 6
+accountBalance++; // 6
+
+console.log("[accountBalance]:", accountBalance);
 
 
 // * Control flow or Control structures
