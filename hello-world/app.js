@@ -143,7 +143,31 @@ console.log("[accountBalance]:", accountBalance);
 //! NEXT TIME
 // Pre-increment and Post-increment
 // We've seen the increment operator in action
-// The increment operator can be used in two ways: 
+// The increment operator can be used in two ways:
+// 1. Pre-increment - ++a
+// 2. Post-increment - a++
+// Already, we've used the increment operator in the post-increment form 
+// The difference between the two is when the increment operation is performed
+// Pre-increment - the increment operation is performed before the value is used
+// Post-increment - the increment operation is performed after the value is used
+console.clear();
+// For example:
+// console.log("Post-increment:");
+// let carDoors = 4;
+// alert(carDoors++)
+// alert(carDoors);
+
+
+// Pre-increment
+// console.log("Pre-increment:");
+// let carDoors2 = 4;
+// alert(++carDoors2);
+// alert(carDoors2);
+
+// Decrement (--)
+// Decrement operator decreases the value of a variable by 1
+
+
 
 
 // * Control flow or Control structures
