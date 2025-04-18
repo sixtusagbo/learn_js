@@ -24,11 +24,11 @@ console.log([]); // Array
 // var, let, const
 // let and const was introduced in ES6
 
-var myName = "John";
-var age = 30;
+// var myName = "John";
+// var age = 30;
 
-console.log("var:", myName);
-console.log("var:", age);
+// console.log("var:", myName);
+// console.log("var:", age);
 
 let myNameLet = "John";
 let ageLet = 30;
@@ -188,6 +188,25 @@ console.log('humanLimbs:', humanLimbs--);
 
 
 console.log('humanLimbs:', humanLimbs);
+
+console.clear();
+
+// * Before we move on to the next topic,
+// let's take a look at alert(), prompt() and confirm()
+// alert() - displays an alert box with a specified message and an OK button
+// Example:
+// alert("Hello World");
+
+// prompt() - displays a dialog box that prompts the user for input
+// Example:
+// prompt("Please enter your name:")
+// const myName = prompt("Please enter your name:");
+// console.log("My name is", myName);
+
+// confirm() - displays a dialog box with a specified message, along with OK and Cancel buttons
+// Example:
+const isAdult = confirm("Are you an adult?");
+console.log("Is adult:", isAdult);
 
 // * REPL - Read-Eval-Print Loop
 // A REPL is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user.
