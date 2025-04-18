@@ -166,8 +166,31 @@ console.clear();
 
 // Decrement (--)
 // Decrement operator decreases the value of a variable by 1
+// There are two types of decrement operators:
+// 1. Pre-decrement -> --a
+// 2. Post-decrement -> a--
+
+// 1. Pre-decrement (--a)
+let numberOfPots = 12;
+console.log('numberOfPots:', numberOfPots);
+--numberOfPots; // 11
+--numberOfPots; // 10
+
+console.clear();
+
+// 2. Post-decrement (a--)
+let humanLimbs = 4;
+console.log('humanLimbs:', humanLimbs);
+
+humanLimbs--;
+
+console.log('humanLimbs:', humanLimbs--);
 
 
+console.log('humanLimbs:', humanLimbs);
+
+// * REPL - Read-Eval-Print Loop
+// A REPL is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user.
 
 
 // * Control flow or Control structures
