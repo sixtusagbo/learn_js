@@ -118,7 +118,16 @@ console.log("Modulus:", remainder);
 
 console.clear();
 
-// ! Naming conventions - Will learn
+// Naming conventions
+// 2. SixtusMiracleAgbo - exercise
+// Cases: 
+
+// Some common naming conventions are:
+// 1. camelCase - myVariableName
+// 2. PascalCase - MyVariableName
+// 3. snake_case - my_variable_name
+// 4. kebab-case - my-variable-name
+
 
 // Increment (++)
 // Increment operator increases the value of a variable by 1
