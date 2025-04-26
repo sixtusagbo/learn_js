@@ -200,6 +200,16 @@ console.log('humanLimbs:', humanLimbs);
 
 console.clear();
 
+// Order of operations (Very important)
+// When multiple operators are used in an expression, the order of operations determines the order in which the operations are performed.
+// The order of operations is PEMDAS:
+// Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right)
+// For example:
+result = 2 + 3 * 4; // 14
+// The multiplication operator (*) has a higher precedence than the addition operator (+), so the multiplication operation is performed first.
+// The result is 2 + (3 * 4) = 2 + 12 = 14
+// The order of operations is important to understand because it can affect the result of an expression.
+
 // * Before we move on to the next topic,
 // let's take a look at alert(), prompt() and confirm()
 // alert() - displays an alert box with a specified message and an OK button
