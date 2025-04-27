@@ -107,8 +107,8 @@ const product = a * b; // 50
 console.log("Multiplication:", product);
 
 // Division (/)
-const result = a / b; // 2
-console.log("Division:", result);
+// const result = a / b; // 2
+// console.log("Division:", result);
 
 // Modulus (%)
 // Modulus operator returns the remainder of a division operation
@@ -224,11 +224,39 @@ result = 2 + 3 * 4; // 14
 
 // confirm() - displays a dialog box with a specified message, along with OK and Cancel buttons
 // Example:
-const isAdult = confirm("Are you an adult?");
-console.log("Is adult:", isAdult);
+// const isAdult = confirm("Are you an adult?");
+// console.log("Is adult:", isAdult);
 
 // * REPL - Read-Eval-Print Loop
 // A REPL is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user.
+
+// * Assignment operators
+// =, +=, -=, *=, /=, %=, **=
+// Assignment operator (=) - assigns a value to a variable
+let x = 5; // assigns the value 5 to the variable x
+x = 10; // reassigns the value 10 to the variable x
+
+// Compound assignment operators
+// These operators are shorthand for performing an operation and assigning the result to a variable
+// They are used to simplify the code and make it more readable
+// The compound assignment operators are:
+// +=, -=, *=, /=, %=, **=
+// += - adds the right operand to the left operand and assigns the result to the left operand
+x += 5; // x = x + 5
+console.log("x:", x); // 15
+
+// -= - subtracts the right operand from the left operand and assigns the result to the left operand
+x -= 5; // x = x - 5
+console.log("x:", x); // 10
+
+// *= - multiplies the left operand by the right operand and assigns the result to the left operand
+x *= 5; // x = x * 5
+console.log("x:", x); // 50
+
+// Exercise:
+// Using the prompt() method, ask the user for their name and age
+// Store the name and age in variables
+// Log the name and age to the console saying "Hello, [name]", then on the next line "You're going to be [age + 4] in the next 4 years"
 
 
 // * Control flow or Control structures
