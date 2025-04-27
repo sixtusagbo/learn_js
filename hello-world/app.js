@@ -258,6 +258,7 @@ console.log("x:", x); // 50
 // Store the name and age in variables
 // Log the name and age to the console saying "Hello, [name]", then on the next line "You're going to be [age + 4] in the next 4 years"
 
+// ! STRING CONCATENATION - Will learn?
 
 // * Control flow or Control structures
 // There are three common types of control flow:
