@@ -149,7 +149,6 @@ accountBalance++; // 1010
 
 console.log("[accountBalance]:", accountBalance);
 
-//! NEXT TIME
 // Pre-increment and Post-increment
 // We've seen the increment operator in action
 // The increment operator can be used in two ways:
@@ -205,7 +204,7 @@ console.clear();
 // The order of operations is PEMDAS:
 // Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right)
 // For example:
-result = 2 + 3 * 4; // 14
+// result = 2 + 3 * 4; // 14
 // The multiplication operator (*) has a higher precedence than the addition operator (+), so the multiplication operation is performed first.
 // The result is 2 + (3 * 4) = 2 + 12 = 14
 // The order of operations is important to understand because it can affect the result of an expression.
@@ -233,8 +232,8 @@ result = 2 + 3 * 4; // 14
 // * Assignment operators
 // =, +=, -=, *=, /=, %=, **=
 // Assignment operator (=) - assigns a value to a variable
-let x = 5; // assigns the value 5 to the variable x
-x = 10; // reassigns the value 10 to the variable x
+// let x = 5; // assigns the value 5 to the variable x
+// x = 10; // reassigns the value 10 to the variable x
 
 // Compound assignment operators
 // These operators are shorthand for performing an operation and assigning the result to a variable
@@ -242,23 +241,63 @@ x = 10; // reassigns the value 10 to the variable x
 // The compound assignment operators are:
 // +=, -=, *=, /=, %=, **=
 // += - adds the right operand to the left operand and assigns the result to the left operand
-x += 5; // x = x + 5
-console.log("x:", x); // 15
+// x += 5; // x = x + 5
+// console.log("x:", x); // 15
 
 // -= - subtracts the right operand from the left operand and assigns the result to the left operand
-x -= 5; // x = x - 5
-console.log("x:", x); // 10
+// x -= 5; // x = x - 5
+// console.log("x:", x); // 10
 
 // *= - multiplies the left operand by the right operand and assigns the result to the left operand
-x *= 5; // x = x * 5
-console.log("x:", x); // 50
+// x *= 5; // x = x * 5
+// console.log("x:", x); // 50
 
 // Exercise:
 // Using the prompt() method, ask the user for their name and age
 // Store the name and age in variables
 // Log the name and age to the console saying "Hello, [name]", then on the next line "You're going to be [age + 4] in the next 4 years"
 
-// ! STRING CONCATENATION - Will learn?
+// * STRING CONCATENATION
+// String concatenation is the process of joining two or more strings together
+// There's more than one way to concatenate strings in JavaScript
+// 1. Using the + operator
+// 2. Using the concat() method
+// 3. Using template literals (Introduced in ES6)
+
+// 1. Using the + operator
+// const firstName = "John";
+// const lastName = "Doe";
+// // const fullName = firstName + " " + lastName + " " + "Miracle" + " " + "Agbo" + 223 + " " + "foo" + " " + "bar";
+// let fullName = firstName + " " + lastName;
+// fullName += " " + "Miracle" + " " + "Agbo" + 223;
+// fullName += " " + "foo" + " " + "bar";
+
+// console.log("Full name:", fullName);
+
+// 2. Using the concat() method
+// const firstName = "John";
+// const lastName = "Doe";
+// const fullName = "Jane".concat(" ", lastName);
+// const fullName = firstName.concat(" ", lastName);
+// const fullName = firstName.concat(" ", lastName, " ", "Miracle", " ", "Agbo", 223, " ", "foo", " ", "bar");
+
+// console.log("Full name:", fullName);
+
+// 3. Using template literals (Introduced in ES6)
+// Template literals are string literals that allow embedded expressions
+// Template literals are enclosed by backticks (`) instead of single or double quotes
+// Template literals can contain placeholders, which are indicated by the dollar sign and curly braces (${expression})
+const firstName = "John";
+const lastName = "Doe";
+// const fullName = `${firstName} ${lastName}`;
+// const fullName = `foo bar ${30 + 51} baz`;
+const fullName = `${firstName} ${lastName} Miracle Agbo 223 foo bar`;
+
+console.log("Full name:", fullName);
+
+// Execise:?
+
+// Redo the last exercise using the + operator and template literals
 
 // * Control flow or Control structures
 // There are three common types of control flow:
