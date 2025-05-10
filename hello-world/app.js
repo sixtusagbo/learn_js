@@ -252,6 +252,23 @@ console.clear();
 // x *= 5; // x = x * 5
 // console.log("x:", x); // 50
 
+// /= - divides the left operand by the right operand and 
+// assigns the result to the left operand
+// let x = 50; // 50
+// x /= 5; // x = x / 5
+// console.log("x:", x); // 10
+
+// %= - divides the left operand by the right operand and assigns the remainder to the left operand
+// let x = 10;
+// x %= 3; // x = x % 3
+// console.log("x:", x);
+
+// **= - raises the left operand to the power of the right operand and assigns the result to the left operand
+let x = 10;
+x **= 2; // x = x ** 2
+console.log("x:", x); // 100
+
+
 // Exercise:
 // Using the prompt() method, ask the user for their name and age
 // Store the name and age in variables
@@ -287,13 +304,13 @@ console.clear();
 // Template literals are string literals that allow embedded expressions
 // Template literals are enclosed by backticks (`) instead of single or double quotes
 // Template literals can contain placeholders, which are indicated by the dollar sign and curly braces (${expression})
-const firstName = "John";
-const lastName = "Doe";
+// const firstName = "John";
+// const lastName = "Doe";
 // const fullName = `${firstName} ${lastName}`;
 // const fullName = `foo bar ${30 + 51} baz`;
-const fullName = `${firstName} ${lastName} Miracle Agbo 223 foo bar`;
+// const fullName = `${firstName} ${lastName} Miracle Agbo 223 foo bar`;
 
-console.log("Full name:", fullName);
+// console.log("Full name:", fullName);
 
 // Execise:?
 
